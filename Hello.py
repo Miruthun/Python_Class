@@ -12,3 +12,12 @@ print("Hello World")
 
 # Git status - It tells us the changes that happened oin our local copy of the code
 
+# git pull -- this pulls the latest changes from github
+
+
+# Git add -- to add the untracked files 
+
+
+# git commit -- to provide a descriptive message about the changes 
+
+# git push -- to publish the latest changes to the repository
