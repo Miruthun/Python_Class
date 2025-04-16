@@ -33,6 +33,21 @@ print(len(myList2))
 # CREATE - Creating / Initializing a list
 myList2 = [2,3,4,5,6,7,8,45]
 
+myList2 = [2,3,4,5,6,7,8,45]
+#myList3 = ["Hello",39, 30.45, True, 1234]
+# Adding a new element to the list . The element will be added at the last index always.
+myList2.append(1234)
+print(myList2)
+
+# Insert -- we can insert an element at any specific index
+myList2.insert(2,3456)
+print(myList2)
+
+# extend -- When we want to add a list to list / tuple /set.
+myList2.extend(myList3)
+print(myList2)
+
+
 # READ - Reading / accessing a particular value from the list
 print(myList2[5])
 print("Negative Index:",myList2[-2])
