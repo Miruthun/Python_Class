@@ -10,7 +10,8 @@ list.extend(newGroceries)
 
 # Remove items
 
-list.remove(4,7)
+list.remove(4)
+list.remove(7)
 
 # Update items
 
