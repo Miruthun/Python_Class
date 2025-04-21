@@ -4,7 +4,7 @@ list = ["milk","eggs","bread","butter","cheese"]
 
 # Add more items
 
-list.insert("apples","bananas", "orange juice")
+list.insert("apples","bananas","orange juice")
 
 # Remove items
 
