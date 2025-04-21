@@ -4,7 +4,9 @@ list = ["milk","eggs","bread","butter","cheese"]
 
 # Add more items
 
-list.extend("apples","bananas","orange juice")
+newGroceries = ["apples","bananas","orange juice"]
+
+list.extend(newGroceries)
 
 # Remove items
 
