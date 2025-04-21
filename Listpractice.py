@@ -7,6 +7,7 @@ list = ["milk","eggs","bread","butter","cheese"]
 newGroceries = ["apples","bananas","orange juice"]
 
 list.extend(newGroceries)
+print(list)
 
 # Remove items
 
