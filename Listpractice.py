@@ -7,12 +7,11 @@ list = ["milk","eggs","bread","butter","cheese"]
 newGroceries = ["apples","bananas","orange juice"]
 
 list.extend(newGroceries)
-print(list)
 
 # Remove items
 
-list.remove(4)
-list.remove(7)
+list.remove("cheese")
+list.remove("orange juice")
 
 # Update items
 
