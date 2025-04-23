@@ -12,9 +12,9 @@ set3.add("Lemon")
 print(set3)
 
 #Scenario 3
-tuple = ("Museum","Park","Museum","Bridge")
-print(tuple.count("Museum"))
-print(tuple.index("Museum"))
+tuple1 = ("Museum","Park","Museum","Bridge")
+print(tuple1.count("Museum"))
+print(tuple1.index("Museum"))
 
 #Scenario 4
 Dictionary1 = {
@@ -39,5 +39,5 @@ ThisDictionary = {
     "Novel":1920,
     "Poetry":1850
 }
-ThisSet = set(ThisDictionary)
-print(ThisSet[0])
+ThisTuple = tuple(ThisDictionary)
+print(ThisTuple[0])
