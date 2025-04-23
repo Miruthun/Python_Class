@@ -13,8 +13,8 @@ print(set3)
 
 #Scenario 3
 tuple = ("Museum","Park","Museum","Bridge")
-tuple.count("Museum")
-tuple.index("Museum")
+print(tuple.count("Museum"))
+print(tuple.index("Museum"))
 
 #Scenario 4
 Dictionary1 = {
