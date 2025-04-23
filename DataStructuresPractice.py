@@ -25,8 +25,8 @@ Dictionary2 = {
     "Spice":75,
     "Jewelery":20
 }
-Dictionary3 = Dictionary1.update(Dictionary2)
-print(Dictionary3["Spice"])
+Dictionary1.update(Dictionary2)
+print(Dictionary1["Spice"])
 
 #Scenario 5
 ThisTuple = ("James","Sophia","Lily")
