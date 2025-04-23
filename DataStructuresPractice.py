@@ -29,10 +29,10 @@ Dictionary1.update(Dictionary2)
 print(Dictionary1["Spice"])
 
 #Scenario 5
-ThisTuple = ("James","Sophia","Lily")
-ThisTuple2 = ("James","Ethan","Mia")
-ThisTuple3 = ThisTuple.union(ThisTuple2)
-print(sorted(ThisTuple3))
+ThisSet1 = {"James","Sophia","Lily"}
+ThisSet2 = {"James","Ethan","Mia"}
+ThisSet3 = ThisSet1.union(ThisSet2)
+print(sorted(ThisSet3))
 
 #Scenario 6
 ThisDictionary = {
