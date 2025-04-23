@@ -25,7 +25,7 @@ Dictionary2 = {
     "Spice":75,
     "Jewelery":20
 }
-Dictionary3 = Dictionary1 + Dictionary2
+Dictionary3 = Dictionary1.update(Dictionary2)
 print(Dictionary3.values("Spice"))
 
 #Scenario 5
