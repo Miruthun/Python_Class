@@ -1,1 +1,1 @@
-# Python_Class
+# Miruthun's Python Course - Arvinder Pal
