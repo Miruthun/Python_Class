@@ -188,27 +188,31 @@ print((x & y) ^ (x | y))
 #     c) 7
 #     d) 15
 
-# 22. What is the output of this recursive function?
-def mystery(n):
-    if n <= 1:
-        return n
-    return mystery(n - 1) + mystery(n - 2)
-print(mystery(5))
-#     a) 5
-#     b) 10
-#     c) 9
-#     d) 11
+# 22: What is the output of the following code?
+x = 3
+y = 7
+while x < y:
+    x += 2
+    if x % 2 == 0:
+        y += 1
+print(x + y)
+#    a) 12
+#    b) 13
+#    c) 14
+#    d) 15
 
-# 23. How many times is the following recursive function called (including the initial call) for func(4)?
-def func(n):
-    if n <= 1:
-        return n
-    return func(n - 1) + func(n - 2)
-func(4)
-#     a) 5
-#     b) 9
-#     c) 7
-#     d) 15
+# 23: What is the value of result after the following code executes?
+result = 0
+for i in range(1, 5):
+    if i % 2 == 0:
+        result += i * 2
+    else:
+        result += i
+print(result)
+#    a) 10
+#    b) 12
+#    c) 14
+#    d) 18
 
 # 24.What is the output of this code?
 s = {1, 2, 3}
