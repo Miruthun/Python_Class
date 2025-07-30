@@ -192,7 +192,7 @@ list10 = [2,34,87,21,12,78,101,00,23,32]
 set_list9 = set(list9)
 set_list10 = set(list10)
 union_list_sets = set_list9.intersection(set_list10)
-list11 = list(union_list_sets)
+list11 = (union_list_sets)
 print(list11)
 
 # NO. 24
