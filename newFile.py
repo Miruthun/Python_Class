@@ -340,8 +340,8 @@ tuple1 = (1,2,3,4,5,6,9,8)
 
 # No. 40
 tuple2 = (2,4,6,8,0,12,14)
-lst_tuple1 = list(tuple1)
-lst_tuple2 = list(tuple2)
+lst_tuple1 = (tuple1)
+lst_tuple2 = (tuple2)
 total_list_tuples = lst_tuple1 + lst_tuple2
 print(total_list_tuples)
 
