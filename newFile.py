@@ -13,8 +13,8 @@ if year%4 == 0:
   print("Leap Year!!!")
 
 # No. 3
-x1 = int(input("number 1: "))
-x2 = int(input("number 2: "))
+x1 = 8
+x2 = 2
 o = input("operator (+, -, *, /)")
 if o == "+": 
   print(x1 + x2)
