@@ -15,7 +15,7 @@ if year%4 == 0:
 # No. 3
 x1 = 8
 x2 = 2
-o = input("operator (+, -, *, /)")
+o = "/"
 if o == "+": 
   print(x1 + x2)
 elif o == "-":
@@ -26,7 +26,7 @@ elif o == "/":
   print(x1 / x2)
 
 # No. 4
-score = int(input("Grade score"))
+score = 95
 if score >= 90:
   print("A")
 elif 80 <= score <=89:
@@ -84,13 +84,13 @@ for i in range(1500,2701):
       print(i)
 
 # No. 12
-celcius = int(input("temp in celcius"))
+celcius = 27
 farenheit = ((celcius * 5/9)+32)
 print(farenheit)
 
 # No. 13
 list_prime = [2, 3, 5, 7, 11, 13, 17, 19]
-integer = int(input("Please enter an integer: "))
+integer = 9
 if integer in list_prime:
   print(integer, " is a prime number")
 elif integer > list_prime[-1]:
