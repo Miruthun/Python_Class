@@ -44,5 +44,42 @@
 
 
 
-# 
+def SumOfThreeMulti():
+    threeMultiples = 0
+    for i in range(1,21):
+        if i % 3 == 0:
+            threeMultiples += i
+        else: continue
+        
+    return threeMultiples
+print(SumOfThreeMulti())
 
+def Calculator(no1, no2, operator):
+    if operator == "+":
+        return no1 + no2
+    elif operator == "-":
+        return no1 - no2
+    elif operator == "*":
+        return no1 * no2
+    elif operator == "/":
+        return no1 / no2
+print(Calculator(5,15,"/"))
+
+def Calculator2():
+    no1 = input("First Number")
+    no2 = input("Second Number")
+    operator = input("Operator")
+    int_no1 = int(no1)
+    int_no2 = int(no2)
+    if operator == "+":
+        return int_no1 + int_no2
+    elif operator == "-":
+        return int_no1 - int_no2
+    elif operator == "*":
+        return int_no1 * int_no2
+    elif operator == "/":
+        if int_no2 == 0:
+            return "error"
+        return int_no1 / int_no2
+
+print(Calculator2())
