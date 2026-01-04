@@ -333,6 +333,7 @@ userNum2 = int(input("Number 2: "))
 print(userNum | userNum2)
 '''
 # 38. 
+'''
 x = 1   # x = 0001
 y = 2   # y = 0010
 x = x^y # mid x = 0011, which is 3
@@ -341,6 +342,7 @@ x = x^y # new x = mid a ^ new b, so 0010, or 2, swap done
 # If correct, x is now equal to 2 and y is 1
 print("x =", x)
 print("y =", y)
+'''
 # 39.
 '''
 bitnum = bin(5)
