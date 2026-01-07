@@ -448,9 +448,10 @@ def sum(n):
 print(sum(5))
 '''
 # 50.
-
+'''
 def revStr(struser):
     if len(struser) < 2:
         return struser
     return struser[-1] + revStr(struser[:-1])
 print(revStr("Hello"))
+'''
