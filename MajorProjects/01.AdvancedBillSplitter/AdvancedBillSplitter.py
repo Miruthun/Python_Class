@@ -46,6 +46,9 @@ def order():
         #     else:
         #         orderlist.append(item_current)
         #     counter+=1
+    listdetails = []
+    for i in range(1,peopleNum+1):
+        people_info = input("What's your names")
     return [Item_List_Price, Item_Name_List]
 # print(order())
 # Don't assume, input number, not string
@@ -71,5 +74,4 @@ def tip():
     tip_percent = (int(input("What is the percentage of total you all want to tip?")))/100
     tipped_total = round((1+tip_percent)*taxTot, 2)
     return tipped_total
-print(tip())
-
+# print(tip())

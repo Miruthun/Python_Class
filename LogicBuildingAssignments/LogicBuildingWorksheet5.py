@@ -146,10 +146,24 @@ listDupCount()
 '''
 
 # 14.
-
+'''
 list_3 = [1,2,3,4,5,6,7,8,9]
 def Div3List():
     for i in list_3:
         if i%3 == 0:
             print(i)
+        
 Div3List()
+'''
+
+# 15.
+
+list_neg = [-3,-2,-1,0,1,2,3]
+list_new = []
+def Positifier():
+    for i in list_neg:
+        if i < 0:
+            list_new.append(0)
+        else:
+            list_new.append(i)
+Positifier()
