@@ -157,7 +157,7 @@ Div3List()
 '''
 
 # 15.
-
+'''
 list_neg = [-3,-2,-1,0,1,2,3]
 list_new = []
 def Positifier():
@@ -166,4 +166,141 @@ def Positifier():
             list_new.append(0)
         else:
             list_new.append(i)
+    print(list_new)
 Positifier()
+'''
+
+# 16.
+'''
+tuple = (1,2,3,4,5,7,7,5,4,3,5,3,2)
+def tupleLen():
+    return len(tuple)
+print(tupleLen())
+'''
+
+# 17.
+'''
+tuple_reused = (1,2,3,4,5,7,7,5,4,3,5,3,2)
+usernum = int(input("Enter num: "))
+def userNumChecker():
+    if usernum in tuple_reused:
+        print("Yes, your num exists in tuple.")
+    else:
+        print("not found")
+userNumChecker()
+'''
+
+# 18.
+'''
+tuple_reused2 = (1,2,3,4,5,7,7,5,4,3,5,3,2)
+def tupleSumCount():
+    x=0
+    for i in tuple_reused2:
+        x+=i
+    return x
+print(tupleSumCount())
+'''
+
+# 19.
+'''
+tuple_reused3 = (1,2,3,4,5,7,7,5,4,3,5,3,2)
+def FiveFinder():
+    count = 0
+    for i in tuple_reused3:
+        if i == 5:
+            count+=1
+        else:
+            continue
+    return count
+print(FiveFinder())
+'''
+
+# 20.
+'''
+tuple_reused4 = (1,2,3,4,5,7,7,5,4,3,5,3,2)
+def fstLastTpleElmnts():
+    list0 = []
+    list0.append(tuple_reused4[0])
+    list0.append(tuple_reused4[-1])
+    return list0
+print(fstLastTpleElmnts())
+'''
+
+# 21.
+'''
+def concatenator():
+    tuple_reused4 = (1,2,3,4,5,7,7,5,4,3,5,3,2)
+    tuple_part2 = (1,2,34,5,6,4,6,4,5,4,4,3,)
+    tuplenew = tuple_reused4 + tuple_part2
+    return tuplenew
+print(concatenator())
+'''
+
+# 22.
+'''
+tuple_reused5 = (1,2,3,4,5,7,7,5,4,3,5,3,2)
+def posCheck():
+    for i in tuple_reused4:
+        if i < 0:
+            print("Negative num found")
+            break
+        else:
+            continue
+posCheck()
+'''
+
+# 23.
+'''
+tuple_reused6 = (1,2,3,4,5,7,7,5,4,3,5,3,2)
+def limitTuple():
+    userNum = int(input("Enter num: "))
+    list_t = []
+    for i in tuple_reused6:
+        if i > userNum:
+            list_t.append(i)
+        else: 
+            continue
+    return tuple(list_t)
+print(limitTuple())
+'''
+
+# 24.
+'''
+tuple_reused7 = (1,2,3,4,5,7,7,5,4,3,5,3,2)
+def minTuple():
+    x = 100
+    for i in tuple_reused7:
+        if i < x:
+            x=i
+        else:
+            continue
+    return x
+print(minTuple())
+'''
+
+# 25.
+'''
+tuple_reused8 = (1,2,3,4,5,7,7,5,4,3,5,3,2)
+def reverse():
+    list_R = []
+    list_R = tuple_reused8[::-1]
+    return list_R
+print(reverse())
+'''
+
+# 26.
+'''
+def setAdd():
+    usernum = int(input("Enter num: "))
+    set1 = {1,2,3,5,6,7,7,432,2}
+    set1.add(usernum)
+    print(set1)
+setAdd()
+'''
+
+# 27.
+
+set2 = {1,2,3,5,6,7,7,432,2}
+set2Dupe = {1,2,3}
+if set2Dupe in set2:
+    print("")
