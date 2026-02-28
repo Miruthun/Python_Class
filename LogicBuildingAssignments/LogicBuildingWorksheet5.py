@@ -132,16 +132,21 @@ def listSort():
         listnorm.remove(x)
 listSort()
 '''
-#13.***
+#13.
 '''
-listDup = [1,2,2,3,5,8,2]
+listDup = [1,2,2,3,3,5,8,2]
 def listDupCount():
-    counter = 0
-    x=0
+    duplicates = {}
     for i in listDup:
-        if i in listDup:
-            counter+=1
-    print(counter)
+        if i in duplicates:
+            duplicates[i] +=1
+        else:
+            duplicates[i] = 1
+    duplicates2 = duplicates.copy()
+    for item in duplicates:
+        if duplicates[item] < 2:
+            del duplicates2[item]
+    print(duplicates2)
 listDupCount()
 '''
 
@@ -299,8 +304,625 @@ setAdd()
 '''
 
 # 27.
+'''
+def subsetCheck():
+    set2 = {1,2,3,5,6,7,7,432,2}
+    set2Dupe = {2323}
+    if set2Dupe.issubset(set2):
+        print("Yes, subset found")
+    else: 
+        print("No, subset not found")
+subsetCheck()
+'''
 
-set2 = {1,2,3,5,6,7,7,432,2}
-set2Dupe = {1,2,3}
-if set2Dupe in set2:
-    print("")
+# 28.
+'''
+set1 = {1,2,3,4,5,7,7,5,4,3,5,3,2}
+set1Dupe = {10,11,12,13,14,999,99909}
+def SetUnion():
+    UnionSets1 = set1 | set1Dupe
+    return UnionSets1
+print(SetUnion())
+'''
+
+# 29.
+'''
+set1 = {1,23,4,5,77,5,4,3,53,2}
+def elemSort():
+    for i in set1:
+        if i < 10:
+            continue
+        else:
+            print(i)
+elemSort()
+'''
+
+# 30.
+'''
+set1 = {1,2,3,4,5,7,7,5,4,3,5,3,2}
+set1Dupe = {1,11,2,13,4,999,99909}
+def setInter():
+    Interset = set1 & set1Dupe
+    return Interset
+print(setInter())
+'''
+
+# 31.
+'''
+set31 = {1,4,8,10,14,17,21}
+def setLen():
+    return len(set31)
+print(setLen())
+'''
+
+# 32.
+'''
+set0 = {1}
+def set0check():
+    if len(set0) == 0:
+        print("Empty Set")
+    else:
+        print("Set not empty")
+set0check()
+'''
+
+# 33. 
+'''
+set1 = {1,2,3,4,5,7,7,5,4,3,5,3,2}
+set1Dupe = {10,2,11,12,13,14,999,99909}
+def commonSet():
+    common = set1.intersection(set1Dupe)
+    return common
+print(commonSet())
+'''
+
+# 34. 
+'''
+set1 = {1,2,3,4,5,7,7,5,4,3,5,3,2}
+usernum = int(input("Enter num: "))
+def numcheck():
+    if usernum in set1:
+        print("Yes, num in set")
+    else:
+        print("No, num not in set")
+numcheck()
+'''
+
+# 35.
+'''
+set1 = {1,2,3,4,5,7,7,5,4,3,5,3}
+set1Dupe = {10,2,11,12,13,14,999,99909}
+def setsDiff():
+    diff = set1.union(set1Dupe)
+    return diff
+print(setsDiff())
+'''
+
+# 36.
+'''
+dict1 = {
+    "Key1":10,
+    "Key2":1098,
+    "Key3":1762543,
+    "Key4":109.98
+}
+UserKey = input("Enter Key: ")
+def valFinder():
+    return dict1[UserKey]
+print(valFinder())
+'''
+
+# 37.
+'''
+dict1 = {
+    "Key1":10,
+    "Key2":1098,
+    "Key3":1762543,
+    "Key4":109.98
+}
+def KeyCheck():
+    if "Key5" in dict1:
+        print("Key Found")
+    else:
+        print("Key Not Found")
+KeyCheck()
+'''
+
+# 38.
+'''
+dict1 = {
+    "Key1":10,
+    "Key2":1098,
+    "Key3":1762543,
+    "Key4":109.98
+}
+def KeyAdd():
+    if "Key5" in dict1:
+        print("Key Found")
+    else:
+        dict1["Key5"] = 3.141592
+        print(dict1)
+KeyAdd()
+'''
+
+# 39.
+'''
+dict1 = {
+    "Key1":10,
+    "Key2":1098,
+    "Key3":1762543,
+    "Key4":109.98
+}
+def DictValSum():
+    valSet = dict1.values()
+    valSum = 0
+    for i in valSet:
+        valSum +=i
+    print(valSum)
+DictValSum()
+'''
+
+# 40.
+'''
+dict1 = {
+    "Key1":10,
+    "Key2":1098,
+    "Key3":1762543,
+    "Key4":109.98
+}
+def valCheck():
+    dictVals = dict1.values()
+    count = 0
+    for i in dictVals:
+        if i > 50:
+            count+=1
+    print(count)
+valCheck()
+'''
+
+# 41.
+'''
+dict1 = {
+    "Key1":10,
+    "Key2":1098,
+    "Key3":1762543,
+    "Key4":109.98
+}
+def KeyReturn():
+    keys = dict1.keys()
+    listKeys = list(keys)
+    return listKeys
+print(KeyReturn())
+'''
+
+# 42.
+'''
+dict1 = {
+    "Key1":10,
+    "Key2":1098,
+    "Key3":1762543,
+    "Key4":-109.98
+}
+def negChecker():
+    for key in dict1:
+        if dict1[key] < 0:
+            dict1[key] *= -1
+    return dict1
+print(negChecker())
+'''
+
+# 43.
+'''
+dict1 = {
+    "Key1":10,
+    "Key2":1098,
+    "Key3":1762543,
+    "Key4":-109.98
+}
+dict2 = {
+    "Key5":10,
+    "Key3":1098,
+    "Key7":1762543,
+    "Key8":-109.98
+}
+def dictmerge():
+    return dict1 | dict2
+print(dictmerge())
+'''
+
+# 44.
+'''
+dict1 = {
+    "Key1":10,
+    "Key2":1098,
+    "Key3":1762543,
+    "Key4":-109.98
+}
+userKey = input("Enter Key: ")
+def KeyDel():
+    del dict1[userKey]
+    return dict1
+print(KeyDel())
+'''
+
+# 45. 
+'''
+dict1 = {
+    "Key1":10,
+    "Key2":1098,
+    "Key3":1762543,
+    "Key4":-109.98
+}
+def maxKeyVal():
+    maxvallist = [0]
+    maxkeylist = ["key"]
+    for key in dict1:
+        if int(dict1[key]) > int(maxvallist[0]):
+            maxvallist[0] = dict1[key]
+            maxkeylist[0] = key
+        else: continue
+    print(maxkeylist[0])
+maxKeyVal()
+'''
+
+# 46. 
+'''
+dict1 = {
+    "Key1":10,
+    "Key2":1098,
+    "Key3":1762543,
+    "Key4":-109.98
+}
+def dictValSq():
+    keys = dict1.keys()
+    values = list(dict1.values())
+    for k in range(0,len(values)):
+        values[k] *= values[k]
+    print(values)
+dictValSq()
+'''
+
+# 47.
+'''
+ dict1 = {
+    "Key1":10,
+    "Key2":1098,
+    "Key3":1762543,
+    "Key4":-109.98
+    }
+    def valstrCheck():
+    vals = dict1.values()
+    for i in vals:
+        if i == str:
+            continue
+        else: 
+            print("Not all values are strs")
+            break
+valstrCheck()
+'''
+
+# 48.
+'''
+dict1 = {
+    "Key1":10,
+    "Key2":1098,
+    "Key3":1762543,
+    "Key4":-109.98
+}
+def Counter():
+    counter = 0
+    for keys in dict1:
+        counter+=1
+    print(counter)
+Counter()
+'''
+
+# 49.
+'''
+dict1 = {
+    "Key1":10,
+    "Key2":1098,
+    "Key3":1762543,
+    "Key4":-109.98
+}
+def dictswap():
+    keys = dict1.keys()
+    vals = dict1.values()
+    print(dict(zip(vals,keys)))
+dictswap()
+'''
+
+# 50. 
+'''
+dict1 = {
+    "Key1":10,
+    "Key2":1098,
+    "Key3":1762543,
+    "Key4":-109.98
+}
+def dictFilter():
+    for key in dict1:
+        dict2 = {
+    "Key1":10,
+    "Key2":1098,
+    "Key3":1762543,
+    "Key4":-109.98
+}
+        if dict2.get(key) > 0:
+            continue
+        else: 
+            del dict2[key]
+    return dict2
+print(dictFilter())
+'''
+
+# 51.
+'''
+list1 = [1,2,3,4,5,6,7,8,9,0]
+usernum = int(input("Enter num: "))
+def listAppend():
+    if usernum > 0:
+        list1.append(usernum)
+    else: 
+        print("Error")
+    print(list1)
+listAppend()
+'''
+
+# 54.
+'''
+list1 = [1,2,3,4,5,6,7,8,9,0]
+def listpop():
+    list1.pop()
+    print(list1)
+listpop()
+'''
+
+# 53.
+'''
+list1 = [1,2,3,4,6,5,7,8,9,0]
+def MultiCheck():
+    list1Ord = list1.sort()
+    if len(list1Ord) > 3:
+        print(list1Ord, "len is > 3")
+    else:
+        print(list1Ord, "Len <= 3")
+'''
+
+# 54.
+'''
+list1 = [1,2,3,4,5,6,7,6,8,9,0]
+usernum = int(input("Enter num"))
+def userCount():
+    counter = 0
+    for i in list1:
+        if i is usernum:
+            counter+=1
+        else:
+            continue
+    return counter
+print(userCount())
+'''
+
+#55.
+'''
+list2 = [1,2,3]
+list2b = [5,8,11]
+def extender():
+    list2.extend(list2b)
+    if len(list2) > 5:
+        return list2
+    else:
+        return None
+print(extender())
+'''
+
+# 56.
+'''
+tuple1 = (1,2,3,4,5,6,7,8,990)
+def userPos(a):
+    if a in tuple1:
+        return tuple1.index(a)
+    else:
+        return -1
+print(userPos(6))
+'''
+
+# 57.
+'''
+tuple1 = (0,1,2,3,4,5,6,7,8,99,0)
+def zeroCheck():
+    counter = tuple1.count(0)
+    if counter > 2:
+        return True
+    else:
+        return False
+print(zeroCheck())
+'''
+
+# 58.
+'''
+tuple1 = (1,2,3,4,5,6,7,8,990)
+def tupleLen():
+    length = len(tuple1)
+    print(length, ": ", end = "")
+    if length > 4:
+        print("Long")
+    else: 
+        print("Short")
+tupleLen()
+'''
+
+# 59.
+'''
+set1 = {1,5,0,12,56,9,46,4868}
+usernum = int(input("Enter num:"))
+def setInsert():
+    set1.add(usernum)
+    return set1
+print(setInsert())
+'''
+
+# 60.
+'''
+set1 = {1,5,0,12,56,9,46,4868}
+usernum = int(input("Enter num:"))
+def setDelete():
+    set1.discard(usernum)
+    return set1
+print(setDelete())
+'''
+
+# 61.
+'''
+set2a = {6,3,4,5,7}
+set2b = {10391039,10399310,4898429,42892,48,49,4}
+def setUnion():
+    set2Union = set2a.union(set2b)
+    if len(set2Union) > 10:
+        print(">10 elements")
+    else:
+        print("Less than 10")
+setUnion()
+'''
+
+# 62.
+'''
+set2a = {6,3,5,7}
+set2b = {10391039,10399310,4898429,42892,48,49,4}
+def setIntersect():
+    set2Intersect = set2a.intersection(set2b)
+    if len(set2Intersect) > 0:
+        print(set2Intersect)
+    else:
+        print("No overlap")
+setIntersect()
+'''
+
+# 63.
+'''
+set2b = {10391039,10399310,4898429,42892,2,1}
+def setCheckLen():
+    if len(set2b) > 5:
+        set2b.clear()
+    return set2b
+print(setCheckLen())
+'''
+
+# 64.
+'''
+set2a = {6,3,5,7}
+set2b = {10391039,10399310,4898429,42892,48,49,4}
+def setDiff():
+    diff = set2a.difference(set2b)
+    if len(diff) > 0:
+        return diff
+    else:
+        return "empty"
+print(setDiff())
+'''
+
+# 65.
+'''
+userkey = input("Enter Key: ")
+dict1 = {
+    "Key1":10,
+    "Key2":1098,
+    "Key3":1762543,
+    "Key4":-109.98
+}
+def ValGet():
+    if userkey in dict1:
+        print(dict1.get(userkey))
+    else:
+        print("Not found")
+ValGet()
+'''
+
+# 66.
+'''
+userkey = input("Enter Key: ")
+dict1 = {
+    "Key1":10,
+    "Key2":1098,
+    "Key3":1762543,
+    "Key4":-109.98
+}
+def keyPop():
+    if userkey in dict1:
+        print(dict1.pop(userkey))
+        print(dict1)
+    else:
+        print("Key not Found")
+keyPop()
+'''
+
+# 67.
+'''
+dict1 = {
+    "Key1":10,
+    "Key2":1098
+}
+def keyList():
+    listdict = list(dict1.keys())
+    if len(listdict) > 3:
+        return("Greater than 3 keys; ", listdict)
+    else:
+        return("<3 keys, ", listdict)
+print(keyList())
+'''
+
+# 68.
+'''
+dict1 = {
+    "Key1":10,
+    "Key2":1098,
+    "Key3":1762543,
+    "Key4":-109.98
+}
+
+def DictVals():
+    list1 = list(dict2.values())
+    sum = 0
+    for i in list1:
+        sum += i
+    return sum
+print(DictVals())
+'''
+
+# 69.
+'''
+dict1 = {
+    "Key1":10,
+    "Key2":1098,
+    "Key3":1762543,
+    "Key4":-109.98
+}
+def dictUpdate():
+    usrky = input("Enter Key: ")
+    if usrky in dict1:
+        print(dict1)
+    else:
+        tuple1 = [(usrky, input("Enter Val: "))]
+        dict1.update(tuple1)
+        print(dict1)
+dictUpdate()
+'''
+
+# 70.
+'''
+dict1 = {
+    "Key1":10,
+    "Key2":1098,
+    "Key3":1762543,
+    "Key4":109.98
+}
+def itemDict():
+    for key in dict1:
+        if dict1.get(key) > 0:
+            continue
+        else:
+            return dict1.items(), False
+    return (True, dict1.items())
+print(itemDict())
+'''
