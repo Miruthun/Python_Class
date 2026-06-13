@@ -256,3 +256,18 @@ while flag == False:
                 print(key,"'s subtotal:", dict1[(key)][1])
             return [1, totalPrice]
 '''
+'''
+    if payConfig == 2:
+        Order = order()
+        calclist = []
+        trueTot = []
+        print("This is order:", Order)
+        totalPrice = 0
+        for name in Order:
+            for i in range(0, len(Order[name])):
+                totalPrice += Order[name][i][1]
+            calclist.extend([name, totalPrice])
+    # file.write(str(totalPrice))
+    print("This is CalcList:", calclist)
+    return calclist
+'''

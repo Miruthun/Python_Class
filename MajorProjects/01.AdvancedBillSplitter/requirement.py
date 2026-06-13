@@ -21,9 +21,9 @@ Core Functionality (Mandatory):
 
 1. Multiple Users: 
 
-   - Support 2-10 people splitting the bill
+   - Support 2-10 people splitting the bill| DONE
 
-   - Collect unique names for each participant
+   - Collect unique names for each participant| DONE
 
    - Store participant information in a dictionary
 
@@ -31,9 +31,9 @@ Core Functionality (Mandatory):
 
 2. Itemized Bill Entry:
 
-   - Allow adding multiple items with names and prices
+   - Allow adding multiple items with names and prices| DONE
 
-   - Support continuous item entry until user selects 'done'
+   - Support continuous item entry until user selects 'done'| DONE
 
    - Track each item's price and sharing configuration
 
@@ -43,9 +43,9 @@ Core Functionality (Mandatory):
 
    - Each item can be split in three ways:
 
-     - Equally among ALL participants
+     - Equally among ALL participants| DONE
 
-     - Paid entirely by ONE person
+     - Paid entirely by ONE person| DONE
 
    - Validate that specified people exist in the group
 
@@ -53,9 +53,9 @@ Core Functionality (Mandatory):
 
 4. Tax Calculation:
 
-   - Apply configurable sales tax percentage to the subtotal
+   - Apply configurable sales tax percentage to the subtotal| DONE
 
-   - Tax is calculated on pre-tip subtotal
+   - Tax is calculated on pre-tip subtotal| DONE
 
    - Display tax amount separately
 
@@ -63,11 +63,11 @@ Core Functionality (Mandatory):
 
 5. Tip Calculation:
 
-   - Apply configurable tip percentage to the post-tax total
+   - Apply configurable tip percentage to the post-tax total| DONE
 
    - Display tip amount separately
 
-   - Tip applies to subtotal + tax
+   - Tip applies to subtotal + tax| DONE
 
 
 
@@ -79,7 +79,7 @@ Core Functionality (Mandatory):
 
    - Tax and tip are split equally among all participants
 
-   - Round to 2 decimal places for currency
+   - Round to 2 decimal places for currency| DONE
 
 
 
@@ -91,9 +91,9 @@ Core Functionality (Mandatory):
 
    - Amounts: Positive numbers only (prices, tax %, tip %)
 
-   - People count: Integer between 2-10 inclusive
+   - People count: Integer between 2-10 inclusive| DONE
 
-   - Names: Unique, non-empty strings
+   - Names: Unique, non-empty strings| DONE
 
    - Percentages: Reasonable ranges (tax: 0-20%, tip: 0-30%)
 
