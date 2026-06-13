@@ -23,7 +23,7 @@ ThreeRowStarPattern()
 def dateToday():
     import datetime
     from datetime import date
-    x=datetime.datetime.now()
+    x=datetime.datetime.datetime.now()
     print("Today is", x.day, x.strftime("%B"), x.year)
 dateToday()
 # ------------------------------------------------------
@@ -182,7 +182,7 @@ sumnums()
 '''
 def currentTime():
     import datetime
-    fullcurrentTime = datetime.datetime.now()
+    fullcurrentTime = datetime.datetime.datetime.now()
     print(fullcurrentTime.strftime("%I:%M:%S:%p"))
     currenttime = fullcurrentTime.strftime("%I:%M:%S:%p")
     return currenttime
